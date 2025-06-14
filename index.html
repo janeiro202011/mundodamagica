@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Mundo da Mágica</title>
+  <meta name="description" content="Descubra truques, histórias e curiosidades sobre o fascinante mundo da mágica!" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #111;
+      line-height: 1.7;
+      padding: 0 10px;
+    }
+    header {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: white;
+      text-align: center;
+      padding: 50px 15px;
+      border-radius: 0 0 20px 20px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    nav {
+      background: #111;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 5px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    nav a {
+      color: white;
+      margin: 6px 10px;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding-bottom: 40px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #2575fc;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p, ul li {
+      font-size: 1.1rem;
+      margin-bottom: 14px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 25px;
+    }
+    .gallery, .tricks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery img, .trick img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      object-fit: cover;
+      height: 180px;
+    }
+    .gallery img:hover, .trick img:hover {
+      transform: scale(1.07);
+    }
+    .trick {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+      flex: 1 1 280px;
+      max-width: 300px;
+      transition: box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .trick:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .trick h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #3b3b3b;
+    }
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .share-buttons a {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      transition: transform 0.2s;
+    }
+    .share-buttons img {
+      width: 100%;
+      height: auto;
+    }
+    .share-buttons a:hover {
+      transform: scale(1.15);
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+      border-radius: 20px 20px 0 0;
+    }
+    @media (max-width: 720px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav a {
+        font-size: 0.85rem;
+        margin: 5px 7px;
+        padding: 7px 12px;
+      }
+      .tricks, .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+      .trick {
+        max-width: 90vw;
+        padding: 15px;
+      }
+      .gallery img, .trick img {
+        height: auto;
+        max-width: 90vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mundo da Mágica</h1>
+    <p>Descubra a arte do impossível com truques, histórias e encantos.</p>
+  </header>
+  <nav>
+    <a href="#historia">História</a>
+    <a href="#tipos">Tipos</a>
+    <a href="#truques">Truques</a>
+    <a href="#curiosidades">Curiosidades</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <section id="historia">
+    <h2>História da Mágica</h2>
+    <p>Desde os tempos do Egito Antigo, a mágica encanta e intriga pessoas de todas as idades. O mágico Dedi é citado em registros de 2700 a.C. como um dos primeiros ilusionistas conhecidos.</p>
+    <p>Com o passar dos séculos, a arte se refinou com apresentações em feiras, palácios e teatros. Houdini, no século XX, transformou o escapismo em espetáculo global.</p>
+    <p>Hoje, mágicos como David Blaine e Dynamo continuam a reinventar a arte, misturando truques clássicos com tecnologia moderna.</p>
+  </section>
+  <section id="tipos">
+    <h2>Tipos de Mágica</h2>
+    <ul>
+      <li><strong>Cartomagia:</strong> Truques com cartas de baralho que exigem destreza e memorização.</li>
+      <li><strong>Ilusionismo:</strong> Espetáculos com grandes estruturas e truques de palco impressionantes.</li>
+      <li><strong>Mentalismo:</strong> Apresentações que simulam leitura de mente, previsões e hipnose.</li>
+      <li><strong>Micromagia:</strong> Pequenos truques realizados perto do público, com moedas, elásticos e anéis.</li>
+    </ul>
+  </section>
+  <section id="truques">
+    <h2>Truques Ilustrados</h2>
+    <div class="tricks">
+      <div class="trick">
+        <h3>Cartas Misteriosas</h3>
+        <p>Truque clássico onde o mágico "prevê" a carta escolhida pelo espectador.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Magic_card_trick.jpg/320px-Magic_card_trick.jpg" alt="Truque de cartas" />
+      </div>
+      <div class="trick">
+        <h3>Levitação com Espelho</h3>
+        <p>Usando espelhos e luzes, o mágico cria a ilusão de flutuar.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Levitation_trick_demo.jpg/320px-Levitation_trick_demo.jpg" alt="Levitação" />
+      </div>
+      <div class="trick">
+        <h3>Moeda Desaparecendo</h3>
+        <p>Com um lenço ou mecanismo escondido, a moeda some diante dos olhos.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Coin_vanish_trick.jpg/320px-Coin_vanish_trick.jpg" alt="Moeda desaparecendo" />
+      </div>
+      <div class="trick">
+        <h3>Ilusão de Corte</h3>
+        <p>Truque de palco onde uma assistente parece ser cortada ao meio e depois reunida sem danos.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Sawing_a_woman_in_half.jpg/320px-Sawing_a_woman_in_half.jpg" alt="Ilusão de corte" />
+      </div>
+    </div>
+  </section>
+  <section id="curiosidades">
+    <h2>Curiosidades</h2>
+    <ul>
+      <li>"Abracadabra" tem origem aramaica e significava proteção.</li>
+      <li>O coelho na cartola surgiu no século XVIII.</li>
+      <li>David Copperfield desapareceu com a Estátua da Liberdade em 1983.</li>
+      <li>Mentalistas usam psicologia e sugestão mais que truques reais.</li>
+      <li>Houdini desafiava policiais a trancá-lo em celas, das quais sempre escapava.</li>
+    </ul>
+  </section>
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Magician_performing.jpg/320px-Magician_performing.jpg" alt="Mágico" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Magic_show_India.jpg/320px-Magic_show_India.jpg" alt="Show na Índia" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Magic_wand_and_hat.jpg/320px-Magic_wand_and_hat.jpg" alt="Chapéu e varinha" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Playing_cards_magic.jpg/320px-Playing_cards_magic.jpg" alt="Cartas mágicas" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Magician%27s_apparatus.jpg/320px-Magician%27s_apparatus.jpg" alt="Acessórios mágicos" />
+    </div>
+  </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Dúvidas ou sugestões? Fale conosco:</p>
+    <p><strong>Email:</strong> contato@mundodamagica.com</p>
+    <div class="share-buttons">
+      <a href="https://api.whatsapp.com/send?text=Confira%20este%20site%20incr%C3%ADvel%20sobre%20m%C3%A1gica!%20https://mundodamagica.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://mundodamagica.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" alt="Facebook" />
+      </a>
+      <a href="https://twitter.com/intent/tweet?url=https://mundodamagica.com&text=Confira%20este%20site%20incr%C3%ADvel%20sobre%20m%C3%A1gica!" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Twitter_bird_logo_2012.svg" alt="Twitter" />
+      </a>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Mundo da Mágica. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
